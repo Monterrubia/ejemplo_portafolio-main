@@ -1,0 +1,374 @@
+<!--Práctica 1-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Práctica 1 | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mí</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Laboratorio de Elementos Programables</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Práctica 1</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/Dani.jpeg" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">Daniela Monterrubio Palma</div>
+                                <div class="text-muted">Ing. Biomédica</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Agosto 24, 2023</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >LED</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Display de 7 segmentos</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Push button</a>
+                        
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/web.jpg" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
+                        <p class="fs-6 mb-4">La práctica 1 de este curso tuvo como objetivo repasar los conceptos de electrónica 
+                            vistos hasta ahora en la carrera. Entre estos conceptos se encuentran las conexiones de LEDs, push 
+                            buttons, display de 7 segmentos y resistencias para elaborar un circuito que cumpla con el objetivo 
+                            deseado. De igual manera, se buscó repasar el código que hace funcionar dichos circuitos, por lo que 
+                            se utilizaron palabras de cógido para dar valores a variables y dejar pasar tiempos. Concluyendo, se 
+                            cumplieron los objetivos, dado que se logró que todos los circuitos de los ejercicios funcionaran. 
+                            Además, todos los componentes se identificaron correctamente a la hora de conectarlos, así como se 
+                            buscaron soluciones en caso de que algo no pudiera quedar como en las instrucciones.</p>
+                        
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
+                        <p class="fs-6 mb-4">Los componentes electrónicos son dispositivos que se emplean en los circuitos para 
+                            conducir o manejar la energía. Se pueden clasificar en dos: pasivos y activos. Los componentes pasivos 
+                            son aquellos que no dan energía al circuito, pero consumen energía; mientras que los activos son los que 
+                            modifican o amplifican las señales dentro de un circuito. Ambos tipos de componentes trabajan en conjunto 
+                            para tener un circuito funcional donde las señales se transmitan y no se queme ningún componente [1].</p>
+                        <p class="fs-6 mb-4">Uno de los componentes de esta práctica es la resistencia, la cual tiene como objetivo 
+                            atenuar la corriente que circula por el circuito. También están los diodos, en este caso los LEDs, que 
+                            permiten el paso de la corriente únicamente en una dirección emitiendo luz al recibir la energía. Asimismo, 
+                            los push buttons son un tipo de interruptor que cierran el circuito momentáneamente para mandar una señal 
+                            por el tiempo que este permanezca oprimido. Finalmente, el display de 7 segmentos sirve para visualizar 
+                            información, siendo que debe de establecerse un código para poder expresar la señal de manera correcta [1].</p>
+                        <p class="fs-6 mb-4">Por otra parte, Arduino es una plataforma de creación electrónica de código abierto con 
+                            hardware y software que trabajan en conjunto para tener un circuito que cumpla con las funciones deseadas. 
+                            Es por ello que el objetivo de Arduino es que cualquier persona o empresa pueda crear sus propios circuitos 
+                            y pasarlos a placas. De la misma manera, existen softwares que permiten hacer simulaciones tomando el hardware 
+                            y software de Arduino, para verificar el funcionamiento de los circuitos incluso antes de conectarlos en físico [2].</p>
+                        
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
+                        <p class="fs-6 mb-2 ps-5">• 1 Arduino UNO</p>
+                        <p class="fs-6 mb-2 ps-5">• 1 Protoboard</p>
+                        <p class="fs-6 mb-2 ps-5">• 4 LEDs</p>
+                        <p class="fs-6 mb-2 ps-5">• 4 Resistencias de 220 Ω</p>
+                        <p class="fs-6 mb-2 ps-5">• 2 Resistencias de 1 kΩ</p>
+                        <p class="fs-6 mb-2 ps-5">• 2 Push button</p>
+                        <p class="fs-6 mb-2 ps-5">• 1 Display de 7 segmentos</p>
+                        <p class="fs-6 mb-4 ps-5">• Jumpers</p>
+                        
+                        
+                        
+                        <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                        <p class="fs-6 mb-4">La práctica consistió en armar los circuitos dados en el siguiente link: 
+                            https://www.tinkercad.com/joinclass/THFNAX84SDIQ </p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/1ImgDesarrollo.png" alt="..." /></figure>
+                                                
+                            <p id="simulacion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
+                            <p class="fs-6 mb-4">Cada ejercicio tuvo su propia simulación en Tinkercad, las cuales venían ya hechas 
+                                dentro del link previo. Por la misma razón, el código tampoco se tuvo que realizar desde cero y solo se verificó 
+                                su funcionamiento. También se comprobó que las conexiones de los componentes fuera correcta, al ver el funcionamiento 
+                                correcto del circuito. Estas simulaciones se pueden ver en las imágenes siguientes:</p>
+
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S0.png" alt="..." /></figure>
+                            <p class="fs-7 mb-4">Simulación del ejercicio 0</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S1.png" alt="..." /></figure>
+                            <p class="fs-7 mb-4">Simulación del ejercicio 1</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S2.png" alt="..." /></figure>
+                            <p class="fs-7 mb-4">Simulación del ejercicio 2</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S3.png" alt="..." /></figure>
+                            <p class="fs-7 mb-4">Simulación del ejercicio 3</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S4.png" alt="..." /></figure>
+                            <p class="fs-7 mb-4">Simulación del ejercicio 4</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S5.png" alt="..." /></figure>
+                            <p class="fs-7 mb-4">Simulación del ejercicio 5</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S6.png" alt="..." /></figure>
+                            <p class="fs-7 mb-4">Simulación del ejercicio 6</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S7.png" alt="..." /></figure>
+                            <p class="fs-7 mb-4">Simulación del ejercicio 7</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S8.png" alt="..." /></figure>
+                            <p class="fs-7 mb-4">Simulación del ejercicio 8</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S9.png" alt="..." /></figure>
+                            <p class="fs-7 mb-4">Simulación del ejercicio 9</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S10.png" alt="..." /></figure>
+                            <p class="fs-7 mb-4">Simulación del ejercicio 10</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S11.png" alt="..." /></figure>
+                            <p class="fs-7 mb-4">Simulación del ejercicio 11</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S12.png" alt="..." /></figure>
+                            <p class="fs-7 mb-4">Simulación del ejercicio 12</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S13.png" alt="..." /></figure>
+                            <p class="fs-7 mb-4">Simulación del ejercicio 13</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S14.png" alt="..." /></figure>
+                            <p class="fs-7 mb-4">Simulación del ejercicio 14</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S15.png" alt="..." /></figure>
+                            <p class="fs-7 mb-4">Simulación del ejercicio 15</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S16.png" alt="..." /></figure>
+                            <p class="fs-7 mb-4">Simulación del ejercicio 16</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S17.png" alt="..." /></figure>
+                            <p class="fs-7 mb-4">Simulación del ejercicio 17</p>
+                            
+                            <p id="código">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Código</h1>
+                            <p class="fs-6 mb-4">El código también venía ya hecho, por lo que solo se copió y pegó en el programa Arduino IDE. Asimismo, 
+                                cada ejercicio tuvo su propio código. Los códigos son los siguientes:</p>
+
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C0.png" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Código del ejercicio 0</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C1.png" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Código del ejercicio 1</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C2.png" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Código del ejercicio 2</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C3.png" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Código del ejercicio 3</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C4.png" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Código del ejercicio 4</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C5.png" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Código del ejercicio 5</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C6.png" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Código del ejercicio 6</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C7.png" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Código del ejercicio 7</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C8.png" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Código del ejercicio 8</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C9.png" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Código del ejercicio 9</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C10.png" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Código del ejercicio 10</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C11.png" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Código del ejercicio 11</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C12.png" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Código del ejercicio 12</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C13.png" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Código del ejercicio 13</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C14.png" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Código del ejercicio 14</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C15.png" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Código del ejercicio 15</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C16.png" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Código del ejercicio 16</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C17.png" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Código del ejercicio 17</p>
+
+                            <p id="construccion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
+                            <p class="fs-6 mb-4">La construcción de los circuitos sí se elaboró por cada alumno, así como también se tomó 
+                                video del funcionamiento de cada circuito para comprobar que las conexiones y el código estvieran correctos. 
+                                Además, se pudo comprobar las diferencias entre cada código (cuando hubieran simlilitudes) para determinar 
+                                cómo es el código para hacer diferentes acciones y poder implementarlo en un futuro. Sin embargo, no se tomó imagen 
+                                de cada circuito como tal, sino que únicamente se tomó el video del circuito en funcionamiento. Es por ello que se 
+                                muestran en la sección de resultados.</p>
+                                                       
+
+                        <p id="resultados">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                        <p class="fs-6 mb-4">Cada circuito se elaboró en un protoboard conectado a un Arduino UNO, el cual se conectó 
+                            a su vez a la computadora. En la computadora se abrió el programa Arduino IDE para codificar los circuitos. 
+                            A continuación se muestran los videos de cada uno de los circuitos funcionando.</p>
+                        
+                        <figure class="mb-4" align="center"><video width="20%"  controls>
+                            <source src="video/Dany0.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 0</p>
+                        <figure class="mb-4" align="center"><video width="20%"  controls>
+                            <source src="video/Dany1.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 1</p>
+                        <figure class="mb-4" align="center"><video width="20%"  controls>
+                            <source src="video/Dany2.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 2</p>
+                        <figure class="mb-4" align="center"><video width="20%"  controls>
+                            <source src="video/Dany3.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 3</p>
+                        <figure class="mb-4" align="center"><video width="20%"  controls>
+                            <source src="video/Dany4.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 4</p>
+                        <figure class="mb-4" align="center"><video width="20%"  controls>
+                            <source src="video/Dany5.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 5</p>
+                        <figure class="mb-4" align="center"><video width="20%"  controls>
+                            <source src="video/Dany6.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 6</p>
+                        <figure class="mb-4" align="center"><video width="20%"  controls>
+                            <source src="video/Dany7.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 7</p>
+                        <figure class="mb-4" align="center"><video width="20%"  controls>
+                            <source src="video/Dany8.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 8</p>
+                        <figure class="mb-4" align="center"><video width="20%"  controls>
+                            <source src="video/Dany9.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 9</p>
+                        <figure class="mb-4" align="center"><video width="20%"  controls>
+                            <source src="video/Dany10.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 10</p>
+                        <figure class="mb-4" align="center"><video width="20%"  controls>
+                            <source src="video/Dany11.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 11</p>
+                        <figure class="mb-4" align="center"><video width="20%"  controls>
+                            <source src="video/Dany12.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 12</p>
+                        <figure class="mb-4" align="center"><video width="20%"  controls>
+                            <source src="video/Dany13.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 13</p>
+                        <figure class="mb-4" align="center"><video width="20%"  controls>
+                            <source src="video/Dany14.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 14</p>
+                        <figure class="mb-4" align="center"><video width="20%"  controls>
+                            <source src="video/Dany15.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 15</p>
+                        <figure class="mb-4" align="center"><video width="20%"  controls>
+                            <source src="video/Dany16.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 16</p>
+                        <figure class="mb-4" align="center"><video width="20%"  controls>
+                            <source src="video/Dany17.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 17</p>
+
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                        <p class="fs-6 mb-4">En conclusión, el objetivo de la práctica se cumplió, dado que se repasaron los conceptos 
+                            de electrónica. Esto se reflejó en la construcción de los circuitos, ya que todos funcionaron correctamente. 
+                            Sin embargo, hubo problemas para hacer funcionar los circuitos del display. Esto es porque los tipos son de 
+                            ánodo y cátodo común, siendo que se estaba usando el incorrecto.</p>
+                        <p class="fs-6 mb-4">Por otro lado, se observaron los detalles para conectar correctamente cada tipo de componente. 
+                            Los LEDs se conectan con el ánodo al lado positivo y cátodo a la tierra. Para el display, los pines de alimentación 
+                            controlan el encendido y apagado de cada segmento, por lo que el código debe controlar el orden de encendido de los 
+                            segmentos. También es importante resaltar la importancia de las resistencias, porque sin ellas los componentes se 
+                            quemarían. Finalmente, los push buttons sirven para mandar una señal e iniciar una respuesta del circuito.</p>
+
+                        <p id="referencias">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
+                        <p class="fs-6 mb-4">[1] SDI, «¿Qué son los componentes electrónicos y cuáles se utilizan más?,» SDI, 2022. [En línea]. Available: https://sdindustrial.com.mx/blog/componentes-electronicos-que-son/.</p>
+                        <p class="fs-6 mb-4">[2] Y. Fernández, «Qué es Arduino, cómo funciona y qué puedes hacer con uno,» 23 Septiembre 2022. [En línea]. Available: https://www.xataka.com/basics/que-arduino-como-funciona-que-puedes-hacer-uno.</p>
+
+                        <p id="descargables">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+                        <p class="fs-6 mb-4">Códigos de Arduino de cada ejercicio: </p>
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo0/Codigo0.ino">Ejercicio 0</a> </p>
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo1/Codigo1.ino">Ejercicio 1</a> </p>
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo2/Codigo2.ino">Ejercicio 2</a> </p>
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo3/Codigo3.ino">Ejercicio 3</a> </p>
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo4/Codigo4.ino">Ejercicio 4</a> </p>
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo5/Codigo5.ino">Ejercicio 5</a> </p>
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo6/Codigo6.ino">Ejercicio 6</a> </p>
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo7/Codigo7.ino">Ejercicio 7</a> </p>
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo8/Codigo8.ino">Ejercicio 8</a> </p>
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo9/Codigo9.ino">Ejercicio 9</a> </p>
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo10/Codigo10.ino">Ejercicio 10</a> </p>
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo11/Codigo11.ino">Ejercicio 11</a> </p>
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo12/Codigo12.ino">Ejercicio 12</a> </p>
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo13/Codigo13.ino">Ejercicio 13</a> </p>
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo14/Codigo14.ino">Ejercicio 14</a> </p>
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo15/Codigo15.ino">Ejercicio 15</a> </p>
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo16/Codigo16.ino">Ejercicio 16</a> </p>
+                        <p class="fs-6 mb-4 ps-5">• <a href="files/Codigo17/Codigo17.ino">Ejercicio 17</a> </p>
+                                                
+
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

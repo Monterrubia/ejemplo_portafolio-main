@@ -1,0 +1,278 @@
+<!--Práctica 2-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Práctica 2 | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mí</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Laboratorio de Elementos Programables</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Práctica 2</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/Dani.jpeg" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">Daniela Monterrubio Palma</div>
+                                <div class="text-muted">Ing. Biomédica</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Agosto 31, 2023</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Servomotor</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Potenciómetro</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >LED</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Fuente de poder</a>
+                        
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/web.jpg" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
+                        <p class="fs-6 mb-4">La práctica 2 de este curso tuvo como ojetivo terminar de repasar los conceptos de electrónica. 
+                           Los conceptos repasados en esta práctica fueron conexiones de potenciómetro y servomotores, así como el uso de una 
+                           fuente de poder. De la misma manera que en la práctica anterior, los códigos ya venían escritos, así que únicamente 
+                           se tuvo que revisar el código para repasar su funcionamiento y analizar lo que se estaba haciendo. Finalmente, todos 
+                           los elementos se implementaron correctamente para que el circuito funcionara de la forma descrita en el código. </p>
+                        
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
+                        <p class="fs-6 mb-4">En la electrónica los componentes electrónicos se emplean en los circuitos para 
+                            conducir o manejar la energía, así como para mandar o recibir señales. Estos componentes pueden requerir de energía 
+                            o proveer de energía al sistema, por lo que se deben de conectar apropiadamente para evitar accidentes o daños a algún 
+                            componente [1].</p>
+                        <p class="fs-6 mb-4">Uno de los componentes de esta práctica es el potenciómetro, el cual pretende ajusta el voltaje mediante 
+                            una perilla para alterar el paso de corriente. También están los diodos, en este caso los LEDs, que 
+                            permiten el paso de la corriente únicamente en una dirección emitiendo luz al recibir la energía. Asimismo, 
+                            la fuente de poder tiene como objetivo suministrar energía a los circuitos al transformar un tipo de energía en otra [1].</p>
+                        <p class="fs-6 mb-4">Por otra parte, Arduino es una plataforma de creación electrónica de código abierto con 
+                            hardware y software que trabajan en conjunto para tener un circuito que cumpla con las funciones deseadas. 
+                            Es por ello que el objetivo de Arduino es que cualquier persona o empresa pueda crear sus propios circuitos 
+                            y pasarlos a placas. De la misma manera, existen softwares que permiten hacer simulaciones tomando el hardware 
+                            y software de Arduino, para verificar el funcionamiento de los circuitos incluso antes de conectarlos en físico [2].</p>
+                        
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
+                        <p class="fs-6 mb-2 ps-5">• 1 Arduino UNO</p>
+                        <p class="fs-6 mb-2 ps-5">• 1 Protoboard</p>
+                        <p class="fs-6 mb-2 ps-5">• 2 LEDs</p>
+                        <p class="fs-6 mb-2 ps-5">• 2 Resistencias de 220 Ω</p>
+                        <p class="fs-6 mb-2 ps-5">• 2 Servomotores</p>
+                        <p class="fs-6 mb-2 ps-5">• 1 Fuente de voltaje</p>
+                        <p class="fs-6 mb-4 ps-5">• Jumpers</p>
+                        
+                        <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                        <p class="fs-6 mb-4">La práctica consistió en armar los circuitos dados en el siguiente link: 
+                            https://www.tinkercad.com/classrooms/b5s2eOYhgMn/activities/7h8cznM37L1</p>
+                        
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/1ImgDesarrollo.png" alt="..." /></figure>
+                            
+                            <p id="simulacion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
+                            <p class="fs-6 mb-4">Cada ejercicio tuvo su propia simulación en Tinkercad, las cuales venían ya hechas 
+                                dentro del link previo. Por la misma razón, el código tampoco se tuvo que realizar desde cero y solo se verificó 
+                                su funcionamiento. También se comprobó que las conexiones de los componentes fuera correcta, al ver el funcionamiento 
+                                correcto del circuito. Estas simulaciones se pueden ver en las imágenes siguientes:</p>
+                                
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S1.jpg" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Simulación del ejercicio 1</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S2.jpg" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Simulación del ejercicio 2</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S3.jpg" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Simulación del ejercicio 3</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S5.jpg" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Simulación del ejercicio 5</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S6.jpg" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Simulación del ejercicio 6</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S7.jpg" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Simulación del ejercicio 7</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S8.jpg" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Simulación del ejercicio 8</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S9.jpg" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Simulación del ejercicio 9</p>
+                    
+                            <p id="codigo">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Código</h1>
+                            <p class="fs-6 mb-4">El código también venía ya hecho, por lo que solo se copió y pegó en el programa Arduino IDE. Asimismo, 
+                                cada ejercicio tuvo su propio código. Los códigos son los siguientes:.</p>
+
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C1.png" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Código del ejercicio 1</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C2.png" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Código del ejercicio 2</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C3.png" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Código del ejercicio 3</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C5.png" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Código del ejercicio 5</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C6.png" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Código del ejercicio 6</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C7.png" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Código del ejercicio 7</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C8.png" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Código del ejercicio 8</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C9.png" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Código del ejercicio 9</p>
+                            
+                            <p id="construccion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
+                            <p class="fs-6 mb-4">La construcción de los circuitos sí se elaboró por cada alumno, así como también se tomó 
+                                video del funcionamiento de cada circuito para comprobar que las conexiones y el código estvieran correctos. 
+                                Además, se pudo comprobar las diferencias entre cada código (cuando hubieran simlilitudes) para determinar 
+                                cómo es el código para hacer diferentes acciones y poder implementarlo en un futuro. Sin embargo, no se tomó imagen 
+                                de cada circuito como tal, sino que únicamente se tomó el video del circuito en funcionamiento. Es por ello que se 
+                                muestran en la sección de resultados.</p>
+                            
+
+                        <p id="resultados">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                        <p class="fs-6 mb-4">Cada circuito se elaboró en un protoboard conectado a un Arduino UNO, el cual se conectó 
+                            a su vez a la computadora. En la computadora se abrió el programa Arduino IDE para codificar los circuitos. 
+                            A continuación se muestran los videos de cada uno de los circuitos funcionando.</p>
+
+                        <figure class="mb-4" align="center"><video width="50%"  controls>
+                            <source src="video/Dany1.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 1</p>
+                        <figure class="mb-4" align="center"><video width="50%"  controls>
+                            <source src="video/Dany2.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 2</p>
+                        <figure class="mb-4" align="center"><video width="50%"  controls>
+                            <source src="video/Dany3.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 3</p>
+                        <figure class="mb-4" align="center"><video width="50%"  controls>
+                            <source src="video/Dany5.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 5</p>
+                        <figure class="mb-4" align="center"><video width="50%"  controls>
+                            <source src="video/Dany6.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 6</p>
+                        <figure class="mb-4" align="center"><video width="50%"  controls>
+                            <source src="video/Dany7.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 7</p>
+                        <figure class="mb-4" align="center"><video width="50%"  controls>
+                            <source src="video/Dany8.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 8</p>
+                        <figure class="mb-4" align="center"><video width="50%"  controls>
+                            <source src="video/Dany9.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 9</p>
+
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                        <p class="fs-6 mb-4">En conclusión, el objetivo de la práctica se cumplió, dado que se terminaron de repasar 
+                            los conceptos de electrónica. El aprendizaje de cada componente se pudo notar al momento de la construcción de 
+                            los circuitos.</p>
+                        <p class="fs-6 mb-4">Por otro lado, la conexión de cada componente se realizó correctamente, dado que todo funcionó como 
+                            se esperaba. Para los servomotores, un cable se conectó a tierra, otro a voltaje y el último a la señal. El 
+                            potenciómetro se conectó de la misma manera. Finalmente, la fuente de poder solo proveyó de voltaje para el 
+                            funcionamiento del circuito.</p>
+                        
+
+                        <p id="referencias">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
+                        <p class="fs-6 mb-4">[1] SDI, «¿Qué son los componentes electrónicos y cuáles se utilizan más?,» SDI, 2022. [En línea].
+                             Available: https://sdindustrial.com.mx/blog/componentes-electronicos-que-son/.</p>
+                        <p class="fs-6 mb-4">[2] Y. Fernández, «Qué es Arduino, cómo funciona y qué puedes hacer con uno,» 23 Septiembre 2022. 
+                            [En línea]. Available: https://www.xataka.com/basics/que-arduino-como-funciona-que-puedes-hacer-uno.</p>
+                        
+                        <p id="descargables">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+                        <p class="fs-6 mb-4">Códigos de Arduino de cada ejercicio: </p>
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo1/Codigo1.ino">Ejercicio 1</a> </p>
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo2/Codigo2.ino">Ejercicio 2</a> </p>
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo3/Codigo3.ino">Ejercicio 3</a> </p>
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo5/Codigo5.ino">Ejercicio 5</a> </p>
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo6/Codigo6.ino">Ejercicio 6</a> </p>
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo7/Codigo7.ino">Ejercicio 7</a> </p>
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo8/Codigo8.ino">Ejercicio 8</a> </p>
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo9/Codigo9.ino">Ejercicio 9</a> </p>
+                        
+
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
