@@ -1,4 +1,4 @@
-<!--Práctica-->
+<!--Práctica 5: pantalla OLED-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Práctica # | Ibero Puebla</title>
+        <title>Práctica 5 | Ibero Puebla</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -52,7 +52,7 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Práctica #</h1>
+                        <h1 class="fw-bolder mb-1">Práctica 5</h1>
 
                         <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
                             <img class="img-fluid rounded-circle" width="50px" src="assets/Dani.jpeg" alt="..." />
@@ -62,12 +62,12 @@
                             </div>
                         <!--Aqui termina etiqueta de alumno-->
 
-                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Mes día, 2023</div>
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Septiembre 28, 2023</div>
                         <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
-                        <a class="badge bg-primary text-decoration-none link-light" >Etiqueta</a>
-                        <a class="badge bg-primary text-decoration-none link-light" >Etiqueta</a>
-                        <a class="badge bg-primary text-decoration-none link-light" >Etiqueta</a>
-                        <a class="badge bg-primary text-decoration-none link-light" >Etiqueta</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Attiny85</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Push button</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Pantalla OLED</a>
                         
 
                     </header>
@@ -82,236 +82,103 @@
                                 
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4">La práctica # de este curso tuvo como objetivo...</p>
+                        <p class="fs-6 mb-4">La práctica 5 de este curso tuvo como objetivo introducirnos a la pantalla OLED. Es por 
+                            ello que el código consistió únicamente en marcar si el botón estaba presionado o no, reflejándolo en la 
+                            pantalla con un "ON" u "OFF". Aquí se aprendieron nuevos comandos de código para limpiar la pantalla, 
+                            colocar el cursor donde se requiere e imprimir. Esta vez la simulación y el código no salieron de Tinkercad, 
+                            sino que nos basamos en uno de Wokwi. De ahí tomamos las líneas necesarias, ya que el código de la simulación 
+                            era para un sensor térmico y nosotros elaboramos uno que dependiera de un botón.</p>
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4">Párrafo 1 [1].</p>
-                        <p class="fs-6 mb-4">Párrafo 2 [1].</p>
-                        <p class="fs-6 mb-4">Párrafo 3 [2].</p>
+                        <p class="fs-6 mb-4">La pantalla OLED es un dispositivo de salida cuyas siglas significan <i>Organic 
+                            Light-Emitting Diode</i>. Esta se compone de láminas hechas de materiales orgánicos como el carbón, las 
+                            cuales se colocan entre dos conductores y emiten luz al aplicarles electricidad. Además, a diferencias de 
+                            las pantallas LCD, estas no necesitan de luz de fondo o filtros, por lo que requieren de menos energía [1]. 
+                            El principio de OLED para las pantallas también es aplicable (y se utiliza) en televisores 
+                            teléfonos y demás pantallas [1].</p>
+                        <p class="fs-6 mb-4">En general, las pantallas necesitan un microcontrolador que obtenga los datos y los envíe 
+                            a la pantalla. Por esta razón se tienen 4 patitas para las conexiones que necesita: GND, VCC, SCL y SDA. El 
+                            pin GND se conecta a tierra, VCC a voltaje, SCL es el pin de la señal de reloj y SDA es el pin de la señal 
+                            de datos. Además, usan librerías para poder simplificar las tareas, siendo que se puede mandar texto o 
+                            gráficos a la pantalla. De todas las librerías, las que se usan en esta práctica son TinyWireM y Tiny4kOLED [1].</p>
+                        
                         
                         <p id="materiales">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
-                        <p class="fs-6 mb-2 ps-5">• # Material</p>
-                        <p class="fs-6 mb-2 ps-5">• # Material</p>
-                        <p class="fs-6 mb-2 ps-5">• # Material</p>
-                        <p class="fs-6 mb-2 ps-5">• # Material</p>
-                        <p class="fs-6 mb-2 ps-5">• # Material</p>
+                        <p class="fs-6 mb-2 ps-5">• 1 Pantalla OLED</p>
+                        <p class="fs-6 mb-2 ps-5">• 1 Push button</p>
+                        <p class="fs-6 mb-2 ps-5">• 1 Attiny85</p>
+                        <p class="fs-6 mb-2 ps-5">• 1 Resistencia de 220 Ω</p>
+                        <p class="fs-6 mb-2 ps-5">• Jumpers</p>
                         
                         
                         
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4">La práctica consistió en armar los circuitos dados en el siguiente link: 
-                            #Link de la práctica# </p>
+                        <p class="fs-6 mb-4">La práctica consistió en armar un circuito que mostrara en la pantalla OLED el estado de un push button. 
+                            Siendo que si el botón se encontraba presionado, la pantalla mostraría el mensaje "ON"; mientras que si el botón no estaba 
+                            siendo presionado, el mensaje mostrado sería "OFF". Sin embargo, para esto nos basamos en el circuito y código del siguiente 
+                            link: https://wokwi.com/projects/344317868853166675, el cual corresponde a una pantalla OLED con un sensor de temperatura.</p>
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/1ImgDesarrollo.png" alt="..." /></figure>
                                                 
                             <p id="simulacion">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
-                            <p class="fs-6 mb-4">Cada ejercicio tuvo su propia simulación en Tinkercad, las cuales venían ya hechas 
-                                dentro del link previo. Por la misma razón, el código tampoco se tuvo que realizar desde cero y solo se verificó 
-                                su funcionamiento. También se comprobó que las conexiones de los componentes fuera correcta, al ver el funcionamiento 
-                                correcto del circuito. Estas simulaciones se pueden ver en las imágenes siguientes:</p>
+                            <p class="fs-6 mb-4">La simulación en la que nos basamos para esta práctica es el que se muestra a continuación:.</p>
 
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S0.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 0</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S1.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 1</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S2.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 2</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S3.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 3</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S4.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 4</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S5.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 5</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S6.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 6</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S7.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 7</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S8.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 8</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S9.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 9</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S10.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 10</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S11.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 11</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S12.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 12</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S13.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 13</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S14.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 14</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S15.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 15</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S16.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 16</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S17.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 17</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S.png" alt="..." /></figure>
+                            <p class="fs-7 mb-4">Simulación de la pantalla OLED con el sensor de temperatura</p>
+                            
                             
                             <p id="código">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Código</h1>
-                            <p class="fs-6 mb-4">El código también venía ya hecho, por lo que solo se copió y pegó en el programa Arduino IDE. Asimismo, 
-                                cada ejercicio tuvo su propio código. Los códigos son los siguientes:</p>
+                            <p class="fs-6 mb-4">El código venía ya hecho para un sensor de temperatura, por lo que solo se copiaron las secciones 
+                                líneas requeridas para el funcionamiento de la pantalla. El código es el siguiente:</p>
 
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C0.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 0</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C1.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 1</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C2.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 2</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C3.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 3</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C4.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 4</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C5.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 5</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C6.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 6</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C7.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 7</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C8.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 8</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C9.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 9</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C10.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 10</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C11.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 11</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C12.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 12</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C13.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 13</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C14.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 14</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C15.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 15</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C16.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 16</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C17.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 17</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C.png" alt="..." /></figure>
+                                <p class="fs-7 mb-4">Código de la pantalla</p>
+                                
 
                             <p id="construccion">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
                             <p class="fs-6 mb-4">La construcción de los circuitos sí se elaboró por cada alumno, así como también se tomó 
                                 video del funcionamiento de cada circuito para comprobar que las conexiones y el código estvieran correctos. 
-                                Además, se pudo comprobar las diferencias entre cada código (cuando hubieran simlilitudes) para determinar 
-                                cómo es el código para hacer diferentes acciones y poder implementarlo en un futuro. Sin embargo, no se tomó imagen 
-                                de cada circuito como tal, sino que únicamente se tomó el video del circuito en funcionamiento. Es por ello que se 
-                                muestran en la sección de resultados.</p>
+                                Sin embargo, no se tomó imagen de cada circuito como tal, sino que únicamente se tomó el video del circuito 
+                                en funcionamiento. Es por ello que se muestra en la sección de resultados.</p>
                                                        
 
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
                         <p class="fs-6 mb-4">Cada circuito se elaboró en un protoboard conectado a un Arduino UNO, el cual se conectó 
                             a su vez a la computadora. En la computadora se abrió el programa Arduino IDE para codificar los circuitos. 
-                            A continuación se muestran los videos de cada uno de los circuitos funcionando.</p>
+                            A continuación se muestran el video del funcionamiento de la pantalla con el botón.</p>
                         
                         <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany0.mp4" type="video/mp4">
+                            <source src="video/Dany.mp4" type="video/mp4">
                         </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 0</p>
-                        <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany1.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 1</p>
-                        <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany2.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 2</p>
-                        <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany3.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 3</p>
-                        <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany4.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 4</p>
-                        <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany5.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 5</p>
-                        <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany6.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 6</p>
-                        <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany7.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 7</p>
-                        <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany8.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 8</p>
-                        <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany9.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 9</p>
-                        <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany10.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 10</p>
-                        <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany11.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 11</p>
-                        <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany12.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 12</p>
-                        <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany13.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 13</p>
-                        <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany14.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 14</p>
-                        <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany15.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 15</p>
-                        <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany16.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 16</p>
-                        <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany17.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 17</p>
+                        <p class="fs-7 mb-4">Funcionamiento de la pantalla con el botón</p>
+                        
 
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
-                        <p class="fs-6 mb-4">En conclusión, el objetivo de la práctica se cumplió, dado que...</p>
-                        <p class="fs-6 mb-4">Además,...</p>
+                        <p class="fs-6 mb-4">En conclusión, el objetivo de la práctica se cumplió, dado que el código para la pantalla 
+                            funcionó correctamente. De igual manera, pudimos solucionar un pequeño problema, el cual era que al poner 
+                            el mensaje "ON" después del "OFF", se imprimía un "ONF", por lo que tuvimos que agregarle un espacio en 
+                            blanco después de la palabra. De ahí en fuera, el código para la práctica fue sencillo de implementar y no 
+                            hubo muchos componentes que coordinar para el circuito.</p>
+                        
 
                         <p id="referencias">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
-                        <p class="fs-6 mb-4">[1] Referencia 1.</p>
-                        <p class="fs-6 mb-4">[2] Referencia 2.</p>
+                        <p class="fs-6 mb-4">[1] L. Del Valle, «SSD1306 pantalla OLED con Arduino y ESP8266 I2C» 2020. [En línea]. Available: https://programarfacil.com/blog/arduino-blog/ssd1306-pantalla-oled-con-arduino/.</p>
+                        
 
                         <p id="descargables">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
-                        <p class="fs-6 mb-4">Códigos de Arduino de cada ejercicio: </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo0/Codigo0.ino">Ejercicio 0</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo1/Codigo1.ino">Ejercicio 1</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo2/Codigo2.ino">Ejercicio 2</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo3/Codigo3.ino">Ejercicio 3</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo4/Codigo4.ino">Ejercicio 4</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo5/Codigo5.ino">Ejercicio 5</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo6/Codigo6.ino">Ejercicio 6</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo7/Codigo7.ino">Ejercicio 7</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo8/Codigo8.ino">Ejercicio 8</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo9/Codigo9.ino">Ejercicio 9</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo10/Codigo10.ino">Ejercicio 10</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo11/Codigo11.ino">Ejercicio 11</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo12/Codigo12.ino">Ejercicio 12</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo13/Codigo13.ino">Ejercicio 13</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo14/Codigo14.ino">Ejercicio 14</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo15/Codigo15.ino">Ejercicio 15</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo16/Codigo16.ino">Ejercicio 16</a> </p>
-                        <p class="fs-6 mb-4 ps-5">• <a href="files/Codigo17/Codigo17.ino">Ejercicio 17</a> </p>
+                        <p class="fs-6 mb-4">Código del ejercicio: </p>
+                        
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo/Codigo.ino">Código</a> </p>
+                        
                                                 
 
                 </div>
