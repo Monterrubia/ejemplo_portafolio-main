@@ -52,7 +52,7 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Práctica #</h1>
+                        <h1 class="fw-bolder mb-1">Práctica 6</h1>
 
                         <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
                             <img class="img-fluid rounded-circle" width="50px" src="assets/Dani.jpeg" alt="..." />
@@ -62,14 +62,20 @@
                             </div>
                         <!--Aqui termina etiqueta de alumno-->
 
-                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Mes día, 2023</div>
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Octubre 4, 2023</div>
                         <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
-                        <a class="badge bg-primary text-decoration-none link-light" >Etiqueta</a>
-                        <a class="badge bg-primary text-decoration-none link-light" >Etiqueta</a>
-                        <a class="badge bg-primary text-decoration-none link-light" >Etiqueta</a>
-                        <a class="badge bg-primary text-decoration-none link-light" >Etiqueta</a>
-                        
-
+                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Attiny85</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Sensores analógicos</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Sensores digitales</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Sensores inteligentes</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Push button</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Sensor digital de flama</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Fotorresistencia</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Sensor de ruido pequeño</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Sensor ultrasónico</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Sensor de humedad</a>
+                                                
                     </header>
                 </div>
             </section>
@@ -82,236 +88,156 @@
                                 
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4">La práctica # de este curso tuvo como objetivo...</p>
+                        <p class="fs-6 mb-4">La práctica 6 de este curso tuvo como objetivo conocer y usar sensores digitales, analógicos e 
+                            inteligentes. Los sensores digitales son aquellos que reciben información de apagado o encendido (cero o uno), los 
+                            analógicos reciben información con valores más amplios, y los sensores inteligentes son los que tienen la posibilidad 
+                            de tener más aplicaciones al usar librerías especializadas. Para tener una amplia gama de opciones a usar, se elaboró 
+                            una tabla de 30 sensores especificando su uso, sus unidades y tipo. De esa tabla se escogieron 2 sensores de cada 
+                            tipo para emplearlos en circuitos individuales y ver su funcionamiento.</p>
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4">Párrafo 1 [1].</p>
-                        <p class="fs-6 mb-4">Párrafo 2 [1].</p>
-                        <p class="fs-6 mb-4">Párrafo 3 [2].</p>
+                        <p class="fs-6 mb-4">Principalmente, un sensor es un dispositivo con el objetivo de detectar cambios en su entorno para devolver 
+                            una salida. Estos se implementan para automatizar procesos al medir variantes en los alrededores. De esa manera, el sensor 
+                            provee de datos al sistema para que el controlador realice los procesos que corresponden a esa situación. Un ejemplo de 
+                            proyecto donde se requiere un sensor es un sistem de aire acondicionado que mantenga el ambiente a cierta temperatura. De 
+                            igual manera, en un coche de Arduino puede tener un sensor para detectar obstáculos [1].</p>
+                        <p class="fs-6 mb-4">Los sensores se clasifican de acuerdo al voltaje de salida. Un sensor digital solo tiene dos 
+                            estados a la salida: cambio detectado o no detectado, es decir 0 o 1. Sin embargo, el valor del voltaje de la 
+                            salida depende completamente de la fuente de alimentación, por lo que, si la fuente provee 5 Volts, la salida 
+                            también será de 5 Volts al detectar un cambio. Como ejemplo está la luz parpadeante de una bicicleta frente a 
+                            un sensor de luz digital. En este ejemplo la salida del sensor emitiría 5 Volts cuando detectara la luz de la 
+                            bicicleta [2].</p>
+                        <p class="fs-6 mb-4">Por otra parte se encuentran los sensores analógicos, los cuales tienen más variedad en sus 
+                            señales de salida. Los estados de salida dependen de la magnitud física que reciben para hacerla escalar y 
+                            llegar al valor real. Lo complicado de este tipo de sensores es que deben modificar el cambio en voltaje analógico 
+                            para ser usado en la electrónica del circuito. Para este caso, un ejemplo es un sensor de temperatura que refleja 
+                            las magnitudes en grados centígrados [2].</p>
+                        <p class="fs-6 mb-4">Finalmente, los sensores inteligentes son aquellos que miden los datos del entorno, pero a la hora de dar 
+                            valores a la salida usan recursos informáticos integrados para ejecutar las acciones de respuesta antes de emitir la salida. 
+                            Dichos sensores permiten tener una compilación de la información más precisa y automatizada, así como tener bajo control 
+                            mecanismos en diversos ambientes. Asimismo, estos se utilizan comúnmente en el internet de las cosas para transmitir datos 
+                            a través de internet o redes similares. Se usan principalmente como sensores y actuadores en redes inalámbricas [3].</p>
                         
                         <p id="materiales">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
-                        <p class="fs-6 mb-2 ps-5">• # Material</p>
-                        <p class="fs-6 mb-2 ps-5">• # Material</p>
-                        <p class="fs-6 mb-2 ps-5">• # Material</p>
-                        <p class="fs-6 mb-2 ps-5">• # Material</p>
-                        <p class="fs-6 mb-2 ps-5">• # Material</p>
+                        <p class="fs-6 mb-2 ps-5">• 1 Attiny85</p>
+                        <p class="fs-6 mb-2 ps-5">• 1 protoboard</p>
+                        <p class="fs-6 mb-2 ps-5">• 1 Arduino UNO</p>
+                        <p class="fs-6 mb-2 ps-5">• 1 LED</p>
+                        <p class="fs-6 mb-2 ps-5">• 1 Resistencia de 220 Ω</p>
+                        <p class="fs-6 mb-2 ps-5">• 1 Sensor de temperatura y humedad</p>
+                        <p class="fs-6 mb-2 ps-5">• 1 Sensor digital de flama</p>
+                        <p class="fs-6 mb-2 ps-5">• 1 Fotorresistencia</p>
+                        <p class="fs-6 mb-2 ps-5">• 1 Sensor de ruido pequeño</p>
+                        <p class="fs-6 mb-2 ps-5">• 1 Sensor ultrasónico</p>
+                        <p class="fs-6 mb-2 ps-5">• 1 Push button</p>
                         
                         
                         
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4">La práctica consistió en armar los circuitos dados en el siguiente link: 
-                            #Link de la práctica# </p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/1ImgDesarrollo.png" alt="..." /></figure>
-                                                
-                            <p id="simulacion">
-                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
-                            <p class="fs-6 mb-4">Cada ejercicio tuvo su propia simulación en Tinkercad, las cuales venían ya hechas 
-                                dentro del link previo. Por la misma razón, el código tampoco se tuvo que realizar desde cero y solo se verificó 
-                                su funcionamiento. También se comprobó que las conexiones de los componentes fuera correcta, al ver el funcionamiento 
-                                correcto del circuito. Estas simulaciones se pueden ver en las imágenes siguientes:</p>
-
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S0.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 0</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S1.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 1</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S2.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 2</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S3.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 3</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S4.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 4</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S5.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 5</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S6.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 6</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S7.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 7</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S8.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 8</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S9.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 9</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S10.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 10</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S11.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 11</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S12.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 12</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S13.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 13</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S14.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 14</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S15.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 15</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S16.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 16</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/S17.png" alt="..." /></figure>
-                            <p class="fs-7 mb-4">Simulación del ejercicio 17</p>
+                        <p class="fs-6 mb-4">La práctica consistió en seleccionar 2 sensores analógicos, 2 digitales y 2 inteligentes 
+                            para armar un circuito por cada sensor y ver su funcionamiento. Los sensores de cada tipo fueron:</p>
+                            <p class="fs-6 mb-2 ps-5">• Analógico: fotorresistencia y sensor de ruido pequeño</p>
+                            <p class="fs-6 mb-2 ps-5">• Digital: push button y sensor digital de flama</p>
+                            <p class="fs-6 mb-2 ps-5">• Inteligente: sensor ultrasónico y sensor de temperatura y humedad</p>
                             
-                            <p id="código">
-                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Código</h1>
-                            <p class="fs-6 mb-4">El código también venía ya hecho, por lo que solo se copió y pegó en el programa Arduino IDE. Asimismo, 
-                                cada ejercicio tuvo su propio código. Los códigos son los siguientes:</p>
+                        <p id="código">
+                        <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Código</h1>
+                        <p class="fs-6 mb-4">Para los códigos se investigó en internet acerca de cada sensor y códigos ejemplo con los mismos. 
+                            Así el código para cada sensor fue una adaptación del código hallado de acuerdo a lo que se quiso representar.</p>
+                        
+                        <p class="fs-6 mb-4">CÓDIGOS DE SENSORES DIGITALES:</p>
 
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C0.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 0</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C1.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 1</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C2.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 2</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C3.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 3</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C4.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 4</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C5.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 5</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C6.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 6</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C7.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 7</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C8.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 8</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C9.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 9</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C10.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 10</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C11.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 11</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C12.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 12</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C13.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 13</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C14.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 14</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C15.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 15</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C16.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 16</p>
-                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/C17.png" alt="..." /></figure>
-                                <p class="fs-7 mb-4">Código del ejercicio 17</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/Cpush.png" alt="..." /></figure>
+                            <p class="fs-7 mb-4">Código de push button</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/Cflama.png" alt="..." /></figure>
+                            <p class="fs-7 mb-4">Código de sensor digital de flama</p>
+                        
+                        <p class="fs-6 mb-4">CÓDIGOS DE SENSORES ANGALÓGICOS:</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/Cfotorresistencia.png" alt="..." /></figure>
+                            <p class="fs-7 mb-4">Código de fotorresistencia</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/Cruido.png" alt="..." /></figure>
+                            <p class="fs-7 mb-4">Código de sensor de ruido pequeño</p>
 
-                            <p id="construccion">
-                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
-                            <p class="fs-6 mb-4">La construcción de los circuitos sí se elaboró por cada alumno, así como también se tomó 
-                                video del funcionamiento de cada circuito para comprobar que las conexiones y el código estvieran correctos. 
-                                Además, se pudo comprobar las diferencias entre cada código (cuando hubieran simlilitudes) para determinar 
-                                cómo es el código para hacer diferentes acciones y poder implementarlo en un futuro. Sin embargo, no se tomó imagen 
-                                de cada circuito como tal, sino que únicamente se tomó el video del circuito en funcionamiento. Es por ello que se 
-                                muestran en la sección de resultados.</p>
+                        <p class="fs-6 mb-4">CÓDIGOS DE SENSORES INTELIGENTES:</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/Cultra.png" alt="..." /></figure>
+                            <p class="fs-7 mb-4">Código de sensor ultrasónico</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="300px" src="img/Chyt.png" alt="..." /></figure>
+                            <p class="fs-7 mb-4">Código de sensor de humedad y temperatura</p>
+                            
+
+                        <p id="construccion">
+                        <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
+                        <p class="fs-6 mb-4">Se elaboró cada circuito y se comprobó su funcionamiento con el código. Sin embargo, no se tomó imagen 
+                            de cada circuito como tal, sino que únicamente se tomó el video del circuito en funcionamiento. Es por ello que se 
+                            muestran en la sección de resultados.</p>
                                                        
 
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
-                        <p class="fs-6 mb-4">Cada circuito se elaboró en un protoboard conectado a un Arduino UNO, el cual se conectó 
-                            a su vez a la computadora. En la computadora se abrió el programa Arduino IDE para codificar los circuitos. 
-                            A continuación se muestran los videos de cada uno de los circuitos funcionando.</p>
+                        <p class="fs-6 mb-4">Cada circuito se elaboró en un protoboard conectado a un Attiny85, el cual se conectó 
+                            a su vez a la computadora. En la computadora se abrió el programa Arduino IDE para codificar los circuitos y se usó 
+                            el Arduino UNO como programador. A continuación se muestran los videos de cada uno de los circuitos funcionando.</p>
                         
-                        <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany0.mp4" type="video/mp4">
+                        <p class="fs-6 mb-4">VIDEOS DE SENSORES DIGITALES:</p>
+                            <figure class="mb-4" align="center"><video width="20%"  controls>
+                            <source src="video/PushButton.mp4" type="video/mp4">
                         </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 0</p>
+                        <p class="fs-7 mb-4">Funcionamiento del push button</p>
                         <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany1.mp4" type="video/mp4">
+                            <source src="video/Flama.mp4" type="video/mp4">
                         </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 1</p>
+                        <p class="fs-7 mb-4">Funcionamiento del sensor digital de flama</p>
+
+                        <p class="fs-6 mb-4">VIDEOS DE SENSORES ANALÓGICOS:</p>
                         <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany2.mp4" type="video/mp4">
+                            <source src="video/Fotorresistencia.mp4" type="video/mp4">
                         </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 2</p>
+                        <p class="fs-7 mb-4">Funcionamiento de la fotorresistencia</p>
                         <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany3.mp4" type="video/mp4">
+                            <source src="video/RuidoPequeño.mp4" type="video/mp4">
                         </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 3</p>
+                        <p class="fs-7 mb-4">Funcionamiento del sensor de ruido pequeño</p>
+
+                        <p class="fs-6 mb-4">VIDEOS DE SENSORES INTELIGENTES:</p>
                         <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany4.mp4" type="video/mp4">
+                            <source src="video/Ultrasonico.mp4" type="video/mp4">
                         </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 4</p>
+                        <p class="fs-7 mb-4">Funcionamiento del sensor ultrasónico</p>
                         <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany5.mp4" type="video/mp4">
+                            <source src="video/HumedadYTemperatura.mp4" type="video/mp4">
                         </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 5</p>
-                        <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany6.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 6</p>
-                        <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany7.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 7</p>
-                        <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany8.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 8</p>
-                        <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany9.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 9</p>
-                        <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany10.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 10</p>
-                        <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany11.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 11</p>
-                        <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany12.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 12</p>
-                        <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany13.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 13</p>
-                        <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany14.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 14</p>
-                        <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany15.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 15</p>
-                        <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany16.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 16</p>
-                        <figure class="mb-4" align="center"><video width="20%"  controls>
-                            <source src="video/Dany17.mp4" type="video/mp4">
-                        </video></p></figure>
-                        <p class="fs-7 mb-4">Funcionamiento del ejercicio 17</p>
+                        <p class="fs-7 mb-4">Funcionamiento del sensor de humedad y temperatura</p>
+
 
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
-                        <p class="fs-6 mb-4">En conclusión, el objetivo de la práctica se cumplió, dado que...</p>
-                        <p class="fs-6 mb-4">Además,...</p>
+                        <p class="fs-6 mb-4">En conclusión, el objetivo de la práctica se cumplió, dado que se usaron correctamente 2 sensores de 
+                            cada tipo. También se implementaron las librerías necesarias para los sensores que lo requerían, así como se modificaron 
+                            los códigos para poder ser compatibles con Attiny85. Por otra parte, para el sensor de humedad hubo complicaciones con 
+                            el primer código que se intentó, porque Attiny85 no acepta el comando <i>Serial</i>. Al no aceptar dicho comando, se 
+                            tuvo que buscar un nuevo código para implementar.</p>
 
                         <p id="referencias">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
-                        <p class="fs-6 mb-4">[1] Referencia 1.</p>
-                        <p class="fs-6 mb-4">[2] Referencia 2.</p>
+                        <p class="fs-6 mb-4">[1] Proyectos con Arduino. «Sensores Arduino», Sensores con Arduino, 2022. [En línea]. Available: https://proyectosconarduino.com/sensores/?expand_article=1.</p>
+                        <p class="fs-6 mb-4">[2] Solectro. «¿Qué son los sensores analógicos? Todo sobre su funcionamiento», Solectro, 2021. [En línea]. Available: https://solectroshop.com/es/blog/que-son-los-sensores-analogicos-todo-sobre-su-funcionamiento-n91.</p>
+                        <p class="fs-6 mb-4">[3] Tech Target. «Sensor inteligente», ComputerWeekly, 2021. [En línea]. Available: https://www.computerweekly.com/es/definicion/Sensor-inteligente.</p>
 
                         <p id="descargables">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
-                        <p class="fs-6 mb-4">Códigos de Arduino de cada ejercicio: </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo0/Codigo0.ino">Ejercicio 0</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo1/Codigo1.ino">Ejercicio 1</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo2/Codigo2.ino">Ejercicio 2</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo3/Codigo3.ino">Ejercicio 3</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo4/Codigo4.ino">Ejercicio 4</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo5/Codigo5.ino">Ejercicio 5</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo6/Codigo6.ino">Ejercicio 6</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo7/Codigo7.ino">Ejercicio 7</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo8/Codigo8.ino">Ejercicio 8</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo9/Codigo9.ino">Ejercicio 9</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo10/Codigo10.ino">Ejercicio 10</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo11/Codigo11.ino">Ejercicio 11</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo12/Codigo12.ino">Ejercicio 12</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo13/Codigo13.ino">Ejercicio 13</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo14/Codigo14.ino">Ejercicio 14</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo15/Codigo15.ino">Ejercicio 15</a> </p>
-                        <p class="fs-6 mb-2 ps-5">• <a href="files/Codigo16/Codigo16.ino">Ejercicio 16</a> </p>
-                        <p class="fs-6 mb-4 ps-5">• <a href="files/Codigo17/Codigo17.ino">Ejercicio 17</a> </p>
+                        <p class="fs-6 mb-4">Códigos de Arduino de sensores digitales: </p>
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/boton_digital/boton_digital.ino">Push button</a> </p>
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/flame_digital/flame_digital.ino">Sensor digital de flama</a> </p>
+                        <p class="fs-6 mb-4">Códigos de Arduino de sensores analógicos: </p>
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/Fotorresistencia_analog/Fotorresistencia_analog.ino">Fotorresistencia</a> </p>
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/pote_analog/pote_analog.ino">Sensor de ruido pequeño</a> </p>
+                        <p class="fs-6 mb-4">Códigos de Arduino de sensores inteligentes: </p>
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/ultrasonico_inteligente/ultrasonico_inteligente.ino">Sensor ultrasónico</a> </p>
+                        <p class="fs-6 mb-2 ps-5">• <a href="files/humedad_inteligente/humedad_inteligente.ino">Sensor de humedad y temperatura</a> </p>
+
                                                 
 
                 </div>
